@@ -1,5 +1,5 @@
 // const API_URL = "http://localhost:5000/api/items";
-const API_URL = "https://my-backend-4-k9yh.onrender.com";
+const API_URL = "https://my-backend-4-k9yh.onrender.com"
 
 export const getItems = async () => {
   const res = await fetch(API_URL);
