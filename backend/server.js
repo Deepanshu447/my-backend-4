@@ -12,9 +12,11 @@ app.use(express.json());
 
 // MongoDB Atlas
 mongoose
-  .connect("process.env.MONGO_URI")
+  .connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log("DB Error:", err));
+
+  console.log("MONGO_URI:", process.env.MONGO_URI);
 
 // Routes
 app.use("/api/items", itemRoutes);
