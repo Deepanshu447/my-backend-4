@@ -41,7 +41,7 @@ function App() {
       <h2>CRUD App</h2>
       <form onSubmit={handleSubmit}>
         <input
-          placeholder="Title"
+          placeholder="Write your name"
           value={form.title}
           onChange={(e) => setForm({ ...form, title: e.target.value })}
         />
@@ -51,7 +51,7 @@ function App() {
           onChange={(e) => setForm({ ...form, description: e.target.value })}
         />
 
-        <input placeholder="age"
+        <input placeholder="write your age"
         value={form.age}
         onChange={(e)=> setForm({...form,age: e.target.value})}
         />
